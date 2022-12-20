@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal-site</title>
+    <link rel="stylesheet" href="./assets/Css/main.css" />
+    <link rel="stylesheet" href="./assets/Css/grid-system.css" />
+  </head>
+  <body>
+    <!-- Phần header (Đầu trang) -->
+    <div id="header" class="grid">
+      <div class="grid wide">
+        <div class="row">
+          <div class="img-self col l-4">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </div>
+          <div id="nav" class="col l-8">
+            <ul class="nav-list">
+              <li><a href=""></a>About</li>
+              <li><a href=""></a>Work</li>
+              <li><a href=""></a>Notes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần giới thiệu -->
+    <div id="desc">
+      <div class="grid wide desc-container">
+        <div class="desc-cloud cloud-left"></div>
+        <div class="desc-cloud cloud-right"></div>
+        <div class="row desc-container">
+          <div class="desc-content col l-12">
+            <h1>I am</h1>
+          </div>
+          <div class="desc-content col l-12">
+            <p>A Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần banner (ảnh) -->
+    <div id="baner">
+      <div class="baner-img">
+        <img src="./assets/IMG/BANNER/land.svg" alt="land-img" />
+      </div>
+    </div>
+
+    <!-- Phần nội dung 1 -->
+    <div id="content-hi">
+      <div class="grid wide content-hi-container">
+        <div class="row">
+          <div class="col l-12 content-img-text">
+            <div class="content-center">
+              <div class="img">
+                <img src="./assets/IMG/BANNER/me.svg" alt="" />
+              </div>
+              <div class="heading">
+                <h2>Hi.</h2>
+              </div>
+              <div class="para">
+                <p>
+                  I'm a web designer / developer based in Toronto, Canada. I
+                  have a passion for web design and love to create for web and
+                  mobile devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần break giữa các nội dung -->
+    <div id="breaker">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-12">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần nội dung 2 -->
+    <div id="content-wicd">
+      <div class="grid wide wicd-container">
+        <div class="row">
+          <div class="col l-12">
+            <div class="container-heading">
+              <h3>What I can do.</h3>
+            </div>
+            <div class="row" id="design">
+              <div class="col l-4 l-o-1">
+                <div class="home-design">
+                  <div class="design-img">
+                    <img src="/assets/IMG/BANNER/me.svg" alt="" />
+                  </div>
+                  <div class="bubble right">
+                    <img
+                      src="/assets/IMG/BANNER/adobe-photoshop-cs6-logo-svgrepo-com.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6">
+                <div class="docs">
+                  <h4>Design what you want.</h4>
+                  <p>
+                    I like to keep it simple. My goals are to focus on
+                    typography, content and conveying the message that you want
+                    to send.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="dev">
+              <div class="col l-6 l-o-1">
+                <div class="docs">
+                  <h4>Develop what you need.</h4>
+                  <p>
+                    I'm a developer, so I know how to create your website to run
+                    across devices using the latest technologies available.
+                  </p>
+                </div>
+              </div>
+              <div class="col l-4">
+                <div class="home-dev">
+                  <div class="dev-img">
+                    <img src="/assets/IMG/BANNER/me-dev.svg" alt="" />
+                  </div>
+                  <div class="bubble left">
+                    <img
+                      src="/assets/IMG/BANNER/coding-svgrepo-com.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần break giữa các nội dung -->
+    <div id="breaker">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-12">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần nội dung 3 -->
+    <div id="content-ich">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-12">
+            <div class="content-main">
+              <header class="content-header">
+                <h1>I can help.</h1>
+                <h3>I'm currently available for freelance work.</h3>
+              </header>
+              <p>
+                If you have a project that you want to get started, think you
+                need my help with something or just fancy saying hey, then get
+                in touch.
+              </p>
+              <p class="btn-message">
+                <a href="mailto:dinhlong881@gmail.com" class="btn">
+                  Message Me
+                  <i class="img-message"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần footer -->
+    <div id="footer">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-12">
+            <ul class="infor">
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l-12">
+            <p class="footer-para">
+              © 2018 <a href="#">I am</a>
+              . All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

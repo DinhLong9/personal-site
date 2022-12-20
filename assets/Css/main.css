@@ -1,0 +1,385 @@
+/* css cho cả trang */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Quy tắc cần tuân theo
+1. Làm từ trên xuống dưới
+2. Làm từ ngoài vào trong
+3. Làm từ tổng quan đến chi tiết
+*/
+
+/* 
+Vị trí
+Kích thước (width, height)
+Màu sắc
+Kiểu dáng ( kiểu chữ, vuông tròn) 
+*/
+
+/* Phân tích trang Web cần clone < 1 Page >
+1. Header
+    a.  img
+    b.  Nav (Navigation)
+2. Describ
+3. Baner
+4. Content
+5. Footer
+*/
+
+/* Phần header */
+
+#header {
+    background-color: #e0ebe8;
+    height: 128px;
+}
+
+#header .img-self{
+    margin: auto;
+    max-width: 121px;
+}
+
+.img-self img {
+    border-radius: 65%;
+    width: 100px;
+    height: 100px;
+}
+
+#nav .nav-list {
+    float: right;
+    line-height: 128px;
+}
+
+#nav .nav-list li {
+    display: inline-block;
+    margin-left: 42px;
+    color: #45b29a;
+    font-size: 20px;
+}
+
+#nav .nav-list li:first-child {
+    color: #21564b;
+}
+
+#nav .nav-list li:hover {
+    color: #ccc;
+}
+
+/* Phần desc */
+
+#desc {
+    background-color: #e0ebe8;
+    height: 330px;
+    position: relative;
+}
+
+#desc .desc-container {
+    min-height: 330px;
+}
+
+#desc .desc-cloud {
+    background: url(/assets/IMG/BANNER/cloud.svg) top left no-repeat;
+    width: 150px;
+    height: 45px;
+}
+
+#desc .cloud-left {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#desc .cloud-right {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+#desc .desc-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-content h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.desc-content p {
+    font-size: 150%;
+    color: #45b29a;
+}
+/* Phần banner (ảnh) */
+#baner {
+    background-color: #e0ebe8;
+    height: 300px;
+    position: relative;
+}
+
+#baner .baner-img {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Phần Content 1 */
+
+#content-hi {
+    padding: 6em 0 0;
+    margin: 0 0 6em;
+}
+
+
+#content-hi .content-center {
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-center .img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+.img img {
+    max-width: 100%;
+}
+
+.content-center .heading {
+    margin: 20px 0 10px 0;
+    padding: 8px 0 8px 0;
+}
+
+h2, h4 {
+    font-weight: 500;
+    color: #45b29a;
+    font-size: 28px;
+}
+
+.content-center .para {
+    margin: 12px 0 12px 0;
+    padding: 12px 0 12px 0;
+    font-family: cursive;
+    font-size: 21px;
+}
+
+
+/* break ngăn cách giữa các content */
+#breaker {
+    margin: auto;
+    max-width: 100px;
+}
+
+#breaker .line {
+    background-image: url(/assets/IMG/BANNER/line-bg.png);
+    height: 6px;
+    width: 100%;
+}
+
+/* Phần Content 2 "What can i do" */
+
+#content-wicd {
+    padding: 42px 0;
+}
+
+/* Css heading "What can i do"  */
+.wicd-container .container-heading {
+    text-align: center;
+    padding: 28px 0;
+}
+
+.container-heading h3 {
+    margin: 24px 0 12px;
+    color: #1e836c;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/* Css chung cho cả 2 row */
+#dev,
+#design {
+    padding: 42px 0;
+}   
+
+/* Css chung cho img ở cả 2 row */
+.home-dev .dev-img,
+.home-design .design-img {
+    max-width: 150px;
+}
+
+.dev-img img,
+.design-img img {
+    width: 100%;
+}
+
+.home-dev .bubble,
+.home-design .bubble {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+}
+
+/* Css img row 1 */
+#design .home-design {
+    background: url(/assets/IMG/BANNER/line-bg.png) center repeat-x;
+    position: relative;
+}
+
+#content-wicd .right {
+    right: 0;
+    top: 43px;
+}
+
+.bubble img{
+    width: 100%;
+}
+
+/* Css cho nội dung ở cả 2 row */
+#design .docs {
+    padding-left: 28px;
+}
+
+.docs h4 {
+    padding-bottom: 28px;
+}
+
+.docs p {
+    font-size: 21px;
+    font-weight: 300;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+/* Css cho img row 2 */
+#dev .home-dev {
+    background: url(/assets/IMG/BANNER/line-bg.png) center repeat-x;
+    position: relative;
+    min-height: 154px;
+}
+
+.home-dev .dev-img {
+    position: absolute;
+    right: 0;
+}
+
+#content-wicd .left {
+    top: 43px;
+}
+
+
+/* Phần nội dung 3 "i can help you */
+#content-ich {
+    text-align: center;
+    margin: 42px 0 112px 0;
+}
+
+#content-ich .content-main {
+    max-width: 600px;
+    margin: auto;
+}
+
+.content-main .content-header {
+    padding: 28px 0;
+}
+
+.content-header h1 {
+    margin: 20px 0 10px 0;
+    color: #1e836c;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.content-header h3 {
+    padding-top: 28px;
+    margin: 20px 0 10px 0;
+    color: #45b29a;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.content-main p:nth-child(2) {
+    font-size: 21px;
+    font-weight: 300;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+.content-main .btn-message {
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.btn-message .btn {
+    position: relative;
+    padding: 12px 36px 12px 58px;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1b7f69;
+    background-color: #45b29a;
+    border-radius: 3px;
+}
+
+.btn-message .btn:hover {
+    background-color: #3ea08a;
+}
+
+.btn .img-message {
+    background: url(/assets/IMG/BANNER/mail.png) no-repeat;
+    height: 15px;
+    width: 24px;
+    position: absolute;
+    left: 10px;
+}
+
+
+#footer {
+    padding: 42px 0;
+    background-color: #c5ded7;
+}
+
+#footer .infor {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.infor li {
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 0 auto;
+}
+
+.infor li a {
+    text-decoration: none;
+    color: #45b29a;
+    font-size: 21px;
+    font-family: fangsong;
+}
+
+.infor li:hover a {
+    color: #000;
+}
+
+#footer .footer-para {
+    padding-top: 35px;
+    text-align: center;
+    color: #45b29a;
+    font-size: 14px;
+}
+
+.footer-para a {
+    display: inline-block;
+    color: #45b29a;
+    text-decoration: none;
+    border-bottom: 1px solid #45b29a;
+    font-size: 14px;
+}
